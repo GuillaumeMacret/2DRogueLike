@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager1 : MonoBehaviour
 {
@@ -36,6 +36,23 @@ public class GameManager1 : MonoBehaviour
         InitGame();
     }
     
+    //This is called each time a scen is loaded.
+    //void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    //{
+    //    level++;
+    //    InitGame();
+    //}
+
+    //private void OnEnable()
+    //{
+    //    SceneManager.sceneLoaded += OnLevelFinishedLoading;
+    //}
+
+    //private void OnDisable()
+    //{
+    //    SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+    //}
+
     private void OnLevelWasLoaded(int index)
     {
         level++;
